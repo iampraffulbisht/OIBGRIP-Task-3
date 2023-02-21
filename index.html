@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Temperature converter</title>
+</head>
+
+<body>
+    <div class="heading">
+    <h1>Welcome to the Temperature converter Website</h1>
+    <hr>
+    <h3 class="heading2">where you can convert temperature between Celsius and Fahrenheit</h3>
+    <br>
+    </div>
+    <div class="therm">
+        <img src="Thermometer_icon.png" alt="" width="100px" height="100px">
+    </div>
+    <div class="container">
+        <form id="calcTemp" onsubmit="calculateTemp(); return false">
+            <label for="temp">Enter the temperature to convert</label>
+            <br>
+            <input type="number" name="temp" id="temp" value="0">
+            <select name="temp_diff" id="temp_diff">
+                <option value="cel">&#176;Celsius</option>
+                <option value="fah">&#176;Fahrenheit</option>
+                
+            </select>
+            <br>
+            
+            <input type="submit" name="temp" id="submit">
+            <br>
+            <div class = "resultcontainer">
+                <div id="result"></div>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
